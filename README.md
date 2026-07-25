@@ -62,4 +62,7 @@ This project uses `pytest` to ensure the reliability of the backend parsing logi
 1. **Flask Backend & Vanilla JS Frontend:** I chose Flask because it is incredibly lightweight and perfect for a single-endpoint microservice. Paired with Vanilla JS and the Fetch API, it removes the need for heavier frontend frameworks, keeping the application fast and easy to deploy.
 2. **BeautifulSoup over Headless Browsers:** I opted to use `requests` and `BeautifulSoup4` for parsing rather than a headless browser (like Selenium or Puppeteer). While headless browsers render JavaScript, they are resource-heavy and slow. BeautifulSoup is significantly faster and more defensible for a rapid auditing tool focused on initial HTML payloads.
 3. **Graceful Degradation via Extensive Try-Except Blocks:** A key design focus was ensuring the API never crashes. By wrapping the network requests and parsing logic in targeted exception handlers, the application anticipates timeouts, invalid schemas, and non-HTML payloads, always returning a sensible JSON error and a valid HTTP status code rather than a server fault.
-```
+
+## Loom Video
+```https://www.loom.com/share/955e64677d28433ba09b439dfb98e4a4```
+
